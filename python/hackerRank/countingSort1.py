@@ -51,3 +51,11 @@
 # Explanation
 
 # Each of the resulting values  represents the number of times  appeared in .
+
+def countingSort(arr):
+    result = [0] * 100
+    for element in arr:
+        result[element] += 1
+    return result
+
+# interesting new syntax above - the [0] * 100 initializes an array of 100 zeros.
