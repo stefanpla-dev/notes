@@ -1,0 +1,9 @@
+January 7, 2025
+
+The audiobook I'm listening to encourages its readers to exact large changes in their lives by repeating small changes day after day. I believe that is what coding practice will feel like. This is the second day where I'm committing to a few hours of uninterrupted practice in..I'm not even sure how long. I really shut down over the last few months. 
+
+I can't yet put pressure on myself to produce something worth showcasing or highlighting. I have to make it easy for myself to succeed in the short run if I am to do so in the long run. For this first week, this practice will consist merely of practice problems online via Edabit, Codewars, and HackerRank. I find that those websites in their respective order house increasingly more difficult problems. Worth noting. 
+
+For the first time in even longer than the amorphous timeline laid out above, I opened the Unity Game Engine and took a look at the demo video I recorded of my final project for Flatiron school, which was helpful in discerning why I started doing this in the first place. Though I was flying completely blind at the time, there was a certain thrill to putting the Baldo demo together that I got a fleeting glimpse of this morning. 
+
+I have put aside a few courses I'd like to complete as a part of shoring up my technical skills, and the Create with Code track has recently crept to the top of the list. If I make it fun for myself maybe that will change everything. And let me tell you something - everything could stand to change. 
