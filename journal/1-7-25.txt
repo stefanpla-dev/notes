@@ -7,3 +7,5 @@ I can't yet put pressure on myself to produce something worth showcasing or high
 For the first time in even longer than the amorphous timeline laid out above, I opened the Unity Game Engine and took a look at the demo video I recorded of my final project for Flatiron school, which was helpful in discerning why I started doing this in the first place. Though I was flying completely blind at the time, there was a certain thrill to putting the Baldo demo together that I got a fleeting glimpse of this morning. 
 
 I have put aside a few courses I'd like to complete as a part of shoring up my technical skills, and the Create with Code track has recently crept to the top of the list. If I make it fun for myself maybe that will change everything. And let me tell you something - everything could stand to change. 
+
+Note to self tomorrow: today I had some errands to run in the morning so I didn't get to my coding practice until the afternoon and it was much harder to focus. Coding practice may need to become a first thing activity in order to increase the odds that I get the most out of the time I spend doing it. 
