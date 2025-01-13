@@ -1,0 +1,9 @@
+January 13, 2025
+
+Today I will start the Create with Code track via the Unity Game Engine (or, if that doesn't work/costs too much money though it appears at first glance to be free I will start the Udemy course regarding system design recommended by another Flatiron grad) in addition to slightly less data structures/algorithms practice on which I spent basically all of last week. 
+
+The notion of having a track to follow does have me feeling a little bit better. I think it will also be nice to have a more fun but still applicable form of practicing coding and, not for nothing, get a little more experience in C#, the Game Engine's base coding language. 
+
+So long as I can commit to this, and I feel as if I must, there is no way that it doesn't get a little bit brighter every day and week. Maybe I'll even make something good. 
+
+As an aside, at the end of last week I incorporated JavaScript back into my data structures work for the first time since who even knows how long and wow did I feel rusty, and boy did I find it to be clunky compared to the Python practice I've done much more of lately. It was almost a year ago that I was in nearly this exact same position with JavaScript. Picking up the pieces. Almost like a child. 
