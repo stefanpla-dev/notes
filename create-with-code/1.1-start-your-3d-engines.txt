@@ -1,0 +1,7 @@
+Lesson 1.1: Start Your 3D Engines 
+
+Not much of white to take note in lesson 1.1 - was nice to get a step by step walkthrough of setting up a new project and basic navigation of Unity's interface and be intro'd to a new project. It felt good to reopen it.
+
+I guess I should say that this is only the case because I've used the game engine before so it all seemed familiar, but similar to the time I decided to start over at the 101 German level in college, it was nice to become refamiliarized with the foundations of what makes that technology tick.
+
+Will continue chipping away at it tomorrow. 
