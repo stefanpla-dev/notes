@@ -1,0 +1,7 @@
+January 14, 2025
+
+Lots of progress in Unity today. Felt good. Only two weeks or so of consistent practice really does make a difference. Will keep it up. 
+
+As far as data structure/algo practice goes, I have been leaning more towards Edabit and HackerRank. Though colorful, the practice problems on Codewars are quite convoluted and make the extrapolation to a real world scenario, or even an interview scenario, more difficult to discern. HackerRank has definitely got the toughest ones so is probably the best practice for the interview setting (and I remember JPMC saying that they use HackerRank as a part of their interview process, so likely good to become familiar with the interface). 
+
+Edabit is no nonsense, which I like. No pretense or frills, just the question, a handful of resources should you desire them, a simple score-keeping system, and the opportunity to see examples of other solutions once you solve it yourself or give up. Done. I've written before that Edabit is the easiest of all the ones I've used which has been true, but I also realized that I can, in fact, set the difficulty myself should I get lulled into a string of consecutive softballs. More of that for the rest of the day. I'm feeling Unity'd out. 
