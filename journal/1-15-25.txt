@@ -1,0 +1,5 @@
+January 15, 2025
+
+Completed the challenge portion of the first unit of the Unity certification course. Wasn't terribly challenging though the instructor led me to believe otherwise. Was almost immediately stumped by the "Lab" portion where we were asked to put together a plan for a personal project (thankfully they provided a template, and a useful one at that) but nothing came to me in the moment and has yet to. Baldo was a platformer so it feels like kind of a cop-out to do the same thing. It can be woefully simple, which almost makes the decision making process even harder. The example shown in the course was good for ideal complexity/feasability. In it, you play as a UFO trying to beam up cows from a cornfield and avoid helpcopters in a top down, constantly scrolling type of game. Will sit on that for a little bit longer. 
+
+Otherwise, C# exercises in Edabit. Starting from scratch makes my brain feel empty. Feels a little different because I am interested in having this help me get better at Unity. Trying out leaning into the video game bend to see if there's anything there.
