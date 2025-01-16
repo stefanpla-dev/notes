@@ -1,0 +1,11 @@
+January 16, 2025
+
+Got a really slow start today. Something on Unity Learn wasn't working correctly - basically, the navigation bar kept disappearing and the course I was doing, Create with Code, stopped tracking my progress. Initially I believed this to be because the course does, in fact, cost money, but I have no triple confirmed that the course is free, however the test for the Programmer Certification at the end is what costs money. I'm going to chalk it up to some kind of bug on Unity's site. 
+
+Either way, the Junior Programmer track begins with the same units that Create with Code does, so I just played swapsies. BUT THEN a bunch of the assets I imported into Unity were appearing as textureless, highlighter pink forms that took a good deal of tinkering and googling and ChatGPTing to figure out. It is working now, but I do think that if the same thing happened to me again at a later date I'd have to start that research process from scratch. Haha.
+
+I suppose this does come with the territory. I should become used to the fact that this is likely to happen, that the courses I'll seek out and their materials are outdated and that I'll flounder quite a bit during the learning process. 
+
+I suppose I also owe it to myself to be easy on myself when it comes to the amount of progress that I do or do not make in a day, so long as I give it an honest shot every day. It's not like anyone is looking over my shoulder to see how many lessons I complete or even if the output is any good. I started the course on Unity Learn simply because I was curious and nothing more. 
+
+I'm running out of steam so I think I'll retire Unity for the day and go back to ye olde Edabit until I totally crap out. 
