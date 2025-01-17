@@ -1,6 +1,0 @@
-Hi, my name is Stefan and this is Baldo. I realize that this project would be tough to visualize without an exported copy of the game or the Unity Game Engine installed on your computer so I recorded this demo video so you could get an idea of what went into Baldo.
-
-I developed this 2D platformer in the Unity Game Engine for which the base coding language is C# to honor the lifelong interest in gaming and gaming systems that originally drew me to tech. If you've never used the Unity Game Engine, it marries imported sound files, images, and animations with governing C# scripts that trigger the various aspects of the gameplay in an interface akin to the Adobe suite. 
-
-If you take a look at the code you'll find that there are classes for player movement, sound management, traps, level management and gravity manipulation, among others. This game takes inspiration from a classic platformer like the original Super Mario games or the more modern Celeste in that the most time was sunk into ensuring that the character, Baldo, responds very acutely to the player's keystrokes so that the player can place Baldo exactly where they desire on the screen. 
-
