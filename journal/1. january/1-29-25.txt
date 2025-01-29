@@ -1,0 +1,15 @@
+January 29, 2025
+
+Energizing day. Veronica offered to set me up with someone who will give me a crash course in Daml. I graciously accepted. She doesn't feel as if C++ is the future. In fact, she referred to it as a dinosaur. I laughed. 
+
+I'm now juggling a few projects at once and it feels good. I think this will become my preferred state. Those projects are:
+
+1. Working on Daml basics. This progress is slow but relatively enjoyable. The language is declarative and the syntax uncomplicated. 
+
+2. Working on Brayton's personal site. I'll chip away at it a little bit each day.
+
+3. Create with Code via Unity Learn. I've already made it at least a third of the way through, so it would be good of me to see it to completion. 
+
+4. This hasn't yet started, but the system design course recommended to me by another Flatiron alum and vetted by Veronica will be a good use of my time. It has been floating in the back of my mind for some time and would serve as a good foundation for any system I may or may not create in the future. 
+
+Despite this, I do find myself occasionally running out of steam throughout the day. In these moments I think I should be honest with myself and walk away for a little bit, but having something concrete to walk to with a finite beginning and end to limit the time away while still giving myself a break will be a worthwhile search. For now, it continues.
