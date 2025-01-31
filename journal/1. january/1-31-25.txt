@@ -1,0 +1,13 @@
+January 31, 2025
+
+Why did I think January actually had just 30 days?
+
+Much progress on Brayton's site today. So much of React came rushing back to me. So much of it didn't. 
+
+Productivity-wise, downstairs didn't do me so dirty today. I did get a bit of a later start that originally anticipated which hardly ever works in my favor. I am still feeling as if it is better to be busy than not.
+
+I located a much more simplified base Daml application than the one that leads off the Daml documentation. I wonder why they didn't start with the simple one and instead went straight for the full-stack application with a full user interface. What do I know. 
+
+The 3:3:3 system has served me well thus far, but it is also quite easy to deviate and not accomplish all of the things I set out for myself. This is ok - some days are more productive than others - but I wonder if I should split up the strictly coding based work so that my target tasks aren't simply a variation on the same theme. Now that I have Mike and Ray in my life, this should be easier. 
+
+Besides hard coding and career development/contemplation, what else is there? I suppose there is some degree of networking that I could always be doing more of. I do miss some of my cohort-mates from Flatiron. Previous colleagues of mine. That sort of thing. 
