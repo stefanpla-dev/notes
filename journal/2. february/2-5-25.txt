@@ -1,0 +1,9 @@
+February 5, 2025
+
+Weird day today. Not useless or unproductive. Just weird. Later starts never bode well. 
+
+I met with Brayton to show him the site thus far and he finally had some suggestions and pointers for which I was very thankful. I took the opportunity to start the project over completely (lol) as I had unwittingly used the create-react-app command in the Terminal to start the first one which has since been depracated and is no longer maintained. Now it's got Vite, which gives it a fighting chance of surviving. Hopefully, it'll only take two more meetings to iron it all out. After that is actually getting it online, which will be a bit of a crapshoot. Fingers crossed. 
+
+I may do some Unity fiddling, but honestly I feel fried and it's already almost 5:30. I haven't slept great the past few days which is definitely messing with me. Weather is off. I'm not sure. I don't think I'll press it. 
+
+Tomorrow I've got another coaching call with Ray and Mike, which I'm looking forward to. I just got two calls scheduled for Friday with regards to Digital Asset, one with a small team who may have some project work and another for a crash course in Daml itself. We'll see how they go. Could be doozies on both counts. Only one way to find out, I suppose. 
