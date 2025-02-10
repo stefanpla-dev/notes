@@ -1,0 +1,9 @@
+February 10, 2025
+
+Oddball day today, but a good one nonetheless. I feel as if I tagged a lot of bases. As far as this compendium of entries goes, relevant activities were speaking to Ray and Mike again and working on Brayton's site.
+
+I am once again feeling as if web design is not my passion. I find CSS very unweildy in the hands of this novice. It is often difficult to discern whether any of my work conflicts with other work that I've done. At the very least, I could start by splitting my one enormous index.css file into multiple files, each pertaining to their specific component. Perhaps that will help? Tomorrow's activity for sure.
+
+The conversation with Mike and Ray was honestly not as fulfilling as the first. It ran for nearly 90 minutes, and while I do like them and am glad to spend the time with them, especially right now, I feel as if I didn't get nearly as much out of this one as the much shorter intro the first time around. I might have misunderstood their assignment a little bit, but I also feel as if that is somewhat on them to provide worthwhile exercises as well. You know? I wonder if this is because we are beginning to broach territory in which I feel a little self-conscious, of low confidence, or something else like that. I'm by no means going to stop simply because of this discomfort - I feel as if I am not in a position to refuse help. A self-assessment is coming next. Mike has yet to send it to me - he wanted to tweak it a little bit - but we'll see what that says.
+
+Tomorrow I have the majority of the day to myself. I think I'll continue to work on Brayton's site, which I am now beginning to want out of the way, and continue working on my Daml homework from Leve. That may be all I put on my docket in terms of coding projects for tomorrow. I think it would feel good to make meaningful progress on both. 
