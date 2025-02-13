@@ -1,0 +1,13 @@
+Febraury 13, 2025
+
+Nothing took place yesterday. Was a wash. So be it.
+
+Really fun call with Leve today. He is tough to read, sometimes - I can tell that he's a total geek about working with Daml which I suppose is all I can ask. Something about me always strives to be liked and smiled upon for working hard - something to figure out with a therapist sometime before I die - and I guess that's the thing I can't really read from him. That said, we hardly know each other, so who am I to really say. 
+
+He's a patient teacher, especailly considering that I know nothing, have nearly zero programming experience, which I also appreciate. He is good at helping me articulate what I'd like for my simple library application to do and getting that into code. Something that I've picked up on from these first few sessions with him is that I am want to overcomplicate the code itself. After he gets his eyes on it, it always comes away looking much cleaner. So much I suppose I should expect from someone who does this for a living.
+
+It is now clearer to me that Daml is a coding language that governs a workflow. I'm glad to have chosen a library as my forum for my first Daml project as this use for Daml has been easy to marry to the institution of the library - books go through a cycle of being offered, checked out, returned, etc, a process for which Daml is well prepared. Looking forward to additional learning.
+
+Speaking with Sophia and Pinar again tomorrow. About what exactly is hard to know. I think I will come to them with my enthusiasm about my early Daml learnings and let them know that is there is any space to work with them it would be in some kind of developer capacity - my interest lies in getting more proficient as a programmer and, more specifically, assessing what the problem we're trying to solve is and how that problem can be best articulated with (technical) language and laid out on the page. This too draws upon my interest in creative writing, which I have strangely drawn upon in nearly every single job that I have ever had since graudating from college. 
+
+Light at the end of the tunnel re: Brayton's site too. Getting the resumes styled has been a pain in the ass, confirming that web design is not my passion. 
