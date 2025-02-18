@@ -1,0 +1,7 @@
+February 18, 2025
+
+Medium progress today, both on Brayton's site as well as my simple Daml application. I finally got the images to render on Brayton's site without them squishing each other, so that much felt like a win. I got a good test scenario worked out for the library application, so that much felt like a win as well. 
+
+Tomorrow I will begin The Grokking System Design course recommended to me by another Flatiron alum and see what that's all about. With that under my belt I do believe I'll be well prepared to tackle technical interviews in ways that I haven't felt able to yet. And then, finally, it'll be over. I am looking forward to not having to do all of the ideating and educating on my own. Surrendering that to another institution again will be nice. I'll be sure to add another folder to this notes file in which I can keep the notes that I take from that course. They claim it will take about 20 hours to complete. It would be nice to get it done that quickly. 
+
+I think that's going to be all for today.
