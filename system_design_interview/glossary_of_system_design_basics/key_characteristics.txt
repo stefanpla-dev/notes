@@ -1,0 +1,33 @@
+Key Characteristics of Distributed Systems
+
+Scalability 
+
+-capability of a system, process or network to grow and manage increased demand. if it can evolve to do so, it can scale
+-horizontal vs. vertical:
+    -horizontal means adding more of the thing in question to your pool of resources
+    -vertical means increasing the power of the resources you already have
+
+
+Reliability 
+
+-ability of a system to continue operating correctly in the presence of faults, errors, failures
+-a distributed system is reliable if it keeps delivering its services even when one or several of its software or hardware components fail
+-exmaple course has is of Amazon - if a server containing your cart fails, it is immediately replaced with another that has an identical copy of your cart due to redundancy of components and data. obviously, this comes at a cost.
+
+
+Reliability vs. Fault Tolerance
+
+-reliability is user-centric - can the system consistently meet the user's expectations over time?
+    -measured in terms of error rates, mean time between failures (MTBF)
+-fault tolerance is system-centric - how does the system handle internal failures?
+    -measured in how quickly and effectively a system detects, isolates and recovers from failures
+
+
+Availability 
+
+-% of time that a system remains operational under normal conditions
+-takes into account maintainability, repair time
+-reliability = availability over time
+
+
+Serviceability/Manageability, Efficiency also called out in this section but are self explanatory.
