@@ -1,3 +1,19 @@
 Load Balancing 
 
+A load balancer spreads traffic of an application, website or database across a cluster of servers to improve responsiveness and availability.
 
+What are the benefits?
+-users experience faster, uninterrupted service when their requests are immediately passed on to a more readily available Resource
+-system providers experience less downtime
+-system administrators experience fewer failed or stressed components
+
+Algorithms for Determining How a Load Balancer Chooses a Backend servers
+-Least Connection Method - traffic goes to server with the fewest active connections
+-Least Response Time Method - traffic directed to the server with the fewest connections and lowest average response time
+-Least Bandwidth Method - server selected based on least amount of traffic in Mbps
+-Round Robin Method - selection cycles through a list of servers and sends each new request to the next server. Starts over when it reaches the end of the list
+-Weighted Round Robin - when servers have different processing capacity, each server is assigned a weight, and servers with higher weights receive new connections before those with less weights.
+-IP Hash - a hash of the IP address of the client is calculated to redirect the request to a server
+
+Redundant Load Balancing 
+-Use more than one load balancer to create a cluster. In the event one load balancer fails, the other can take over since they are both equally capable of serving traffic and detecting failure.
