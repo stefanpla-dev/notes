@@ -1,2 +1,40 @@
 Caching 
 
+In short, better utilize the resources you have. 
+
+"High speed storage layer that sits between the application and the original source of data"
+
+Think of clearing cache and cookies recommendation from support days - when data is requested, first cache is checked. If not found, data is retrieved from original source. If found, no need to request from original source.
+
+Cache hit - when data is found in the cache
+Cache miss - take a guess.
+Cache eviction - removing data from the cache 
+Cache staleness - when data in the cache is outdated compared to original source
+
+In memory caching - commonly used for caching API responses, session data, web page fragments. stuff that can fit into available memory
+Disk caching - data too large to fit in memory. Or, data that must persist between application restarts. Database queries. Slower than main memory, but still faster than retrieving from a remote source.
+Database caching - self explanatory, but used to reduce the need to access external storage accessed by multiple users.
+Client-side caching - caching on a web browser or mobile device. Can include images, CSS, JS files. Reduce requests to server.
+Server-side caching - also self explanatory. Same as above, but occurs on the server.
+CDN caching - caching on a distributed network of servers, reducing latency of accessing data from remote locations
+DNS caching - Domain Name System. when a user requests to access a website, their computer sends a DNS query to a DNS server to resolve the domain name to an IP address. When requested again, the DNS server can check its cache and immedaitely respond with the IP address. Improves response time.
+
+
+Caching significantly improves performance, but data can't be stale. Removing old data is called "cache invalidation." Need to invalidate cache when data changes (like, the price on a website, for example). 
+Three schemes to do this:
+Write through cache - Data is written into the cache and the corresponding database simultaneously. This scheme also ensures nothing gets lost in case of a failure or crash. Every operation must be done twice. High latency.
+Write around cache - only written into storage, bypassing cache. Cache isn't flooded with write operations that won't be re-read, disadvantage of a read request for recently written data will create a cache miss. High latency.
+Write back cache - Data written to cache alone, confirmed to client. Write to storage is done after specific intervals or certain conditions. Low latency, risk of data loss in the case of a crash prior to the writing to storage.
+
+See screenshot in this folder for a visual.
+
+"Famous" methods of cache invalidation:
+purge - removes cache content for a specific object, url, or set of urls. 
+refresh - fetches requested content from the origin server, even if available in cache. Updated if necessary. 
+ban - any cached content that matches specified criteria is removed. 
+time-to-live (TTL) expiration - sets a time interval at which cached content is considered stale. when a request is received, the cache fetches the latest version of the content if the value has expired and caches that.
+stale-while-revalidate - serve stale content from cache while the content is being updated in the background. Ensures user is served something even if outdated.
+
+Cache Reading
+read through - the cache itself is repsonsible for retrieving the data from the underlying storage when a miss occurs.
+read aside - application is responsible for retrieving data from the underlying storage when a miss occurs. application code is more complex for this reason, but provides more control over the caching process.
