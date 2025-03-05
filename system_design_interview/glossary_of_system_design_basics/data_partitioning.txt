@@ -1,0 +1,18 @@
+Data Partitioning
+
+Divide a large database into smaller, more manageable parts called partitions or shards. Based on data range, size, or type. Processing is distributed across multiple nodes.
+
+See screenshot in this folder for visuals on horizontal and vertical partitioning.
+
+Partitioning Criteria:
+
+Key or Hash Based - create a function that allocates a partition number, like ID % 100. Problem with this is that additional users require that the function be changed
+List portitioning - which partition contains the key? Store there. For example, users in Iceland, Norway, Sweden, etc would wind up in the Nordic partition
+Round robin - with n partitions, the i tup-le is assigned to partition i % n 
+Composite partitioning - combine any of the above to create your own thing. 
+
+Common Problems of Data Partitioning
+
+- Joins are not possible to run once a database is partitioned and spread across multiple machines.
+- Referential integrity: enforcing data inetgrity contrains like foreign keys is really touch in a partitioned database
+- Rebalancing: what if there are a ton of entries for a particular zip code such that it doesn't fit into one partition anymore? Rebalancing like this without incurring downtime is...unlikely. 
