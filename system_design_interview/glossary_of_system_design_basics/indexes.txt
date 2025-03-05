@@ -1,0 +1,10 @@
+Indexes
+
+There always comes a time when database performance is no longer satisfactory. First thing to turn to: database indexing. 
+
+Goal of creating an index is to make it faster to search through a table and find the row or rows that you want. 
+Indexes can be created using one or more columns in a database table.
+
+Example: A Library Catalog - Usually, two such catalogs: one sorted by book title, the other by author. So, you can search for a specific book or a specific person.
+
+Indexing can decrease write performance for this reason. Write data AND update index ever time. All insert, update, and delete operations are affected. So, only add indexes when necessary, since the point is to increase retrieval performance.
