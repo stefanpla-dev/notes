@@ -1,0 +1,10 @@
+PACELC Theorem
+
+What choices does a distributed system have when there is no partition? The system can tradeoff between Latency and Consistency.
+
+Partition yes? Availability or Consistency
+Else: Latency or Consistency
+(See the diagram in this same directory.)
+
+
+
