@@ -1,0 +1,21 @@
+SQL vs. NoSQL
+
+SQL = relational. Structured, pre-defined schema Think of a phone book that stores numbers and addresses and that's all. Rows and columns. Examples include MySQL, Oracle, SQLite, Postgres, MariaDB
+
+NoSQL = non-relational. Like a file folder that can hold literally anything. 
+    Key-value stores: Voldemort, Dynamo
+    Document databases: like the file folder example. Each document can have an entirely different structure. CouchDB or MongoDB
+    Wide-Column Databases: stores data in columns where each column can have differnt names and structures within the same table. Examples are Cassandra and HBase.
+    Graph databases: data saved in graph structure with nodes, properties, and lines. Examples include Neo4J and InfiniteGraph.
+
+
+High Level Differences Between the Two
+
+- Storage models
+- Schema - SQL are fixed, NoSQL are dynamic.
+- Querying - SQL uses SQL (programming language) for defining and manipulating data. Different NoSQL databases can have different syntax.
+- Scalability - SQL are vertically scalable (by increasing horsepower, basically) which is time consuming and expensive. NoSQL are horizontally scalable (easily add more servers).
+- ACID Compliance (Atomicity, Consistency, Isolation, Durability) - relational databases largely are. Most NoSQL sacrifice ACID for scalability.
+
+
+
