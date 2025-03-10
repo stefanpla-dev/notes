@@ -1,0 +1,12 @@
+Proxies
+
+What is a proxy server?
+
+An intermediate piece of hard/software that sits between the client and the server. Essentially, it anonymizes the client from the server by facilitating requests for resources from other servers on behalf of clients. This is called a forward proxy.
+
+Can also be used to cache data, load balance, route requests. 
+
+Can "collapse" many of the same data request into one request. 
+
+Can also anonymize the server from the client. This is called a reverse proxy.
+
