@@ -1,0 +1,18 @@
+Redundancy and Replication
+
+What is redundancy?
+What is replication?
+
+Redundancy is the duplication of critical components with the intention of increasing the reliability of that system. Removes single point of failure. Provides backup.
+
+Replication is the process of copying and synchronizing data from one database to another to increase availability, fault tolerance, scalability.
+
+    Three typcial database repliacation strategies:
+    1. Synchronus replication - changes made to primary database are immediately replicatated to replica databases before write operation is complete.In other words, write operation is acknowledged after the replica databases confirm that they have received and processed changes.
+
+    2. Asynchronus replication - changes are queued and replicated to the replicas at a later time. Results in temporary inconsistencies. However, write operations are completed quickly. 
+
+    3. Semi-synchronus replication - combines elements of both. Changes replicated immediately to at least one replica database and others wait. Write operation not complete until at least one replica acknowledges it has received and processed.
+
+
+
