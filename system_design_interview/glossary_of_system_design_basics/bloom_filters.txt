@@ -1,0 +1,14 @@
+Bloom Filters
+
+Used to quickly find if an element might be present in a set. Like, an index in a separate index file that points to a data file is present on that separate file.
+
+They don't guarantee 100% accuracy but are much more memory and space efficient than something like a hash table.
+
+How it works:
+    - use hash functions to map elements to indices in a bit (zeros and ones) array, initially all set to 0.
+    - when an element is inserted, the hash functions calculate indices within the bit array, and the bits and those indices are set to 1. 
+    - lookup. to check if an element might be present, hash functions calculate indices as before, and the bits at those indices are checked.
+        - if any of the corresponding bits are 0, element is definitely not there
+        - if all are 1, the element might be in the set.
+    
+
