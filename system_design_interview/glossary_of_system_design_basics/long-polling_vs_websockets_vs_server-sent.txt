@@ -1,0 +1,27 @@
+Long-Polling vs WebSockets vs Server-Sent Events
+
+These are all communication protocols between a client and a server.
+
+
+Ajax Polling
+    Client opens connection and requests data.
+    Webpage reads and sends requests to the server at regular intervals
+    Server sends back
+    Client requests again if needed
+
+    Client has to keep asking for new data and many empty repsonses are returned as a result.
+
+HTTP Long-Polling
+    Allows server to push information to a client whenever new data is available.
+    Client can still request, but with understanding that it may not get a response immediately. "Hanging GET"
+    Once data is available, it is sent to the client.
+
+WebSockets
+    Establishes a persistent connection between a client and a server that both parties can use to start sending data at any time.
+
+Server-Sent Events (SSEs)
+    Client makes initial request 
+    Webpage opens a connection to the server
+    Server then sends data whenever it is available. Client can't make additional asks.
+
+    Best when real-time traffic from the server is needed or data from the server is generated in a loop.
