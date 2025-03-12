@@ -3,6 +3,8 @@ Data Partitioning
 Divide a large database into smaller, more manageable parts called partitions or shards. Based on data range, size, or type. Processing is distributed across multiple nodes.
 
 See screenshot in this folder for visuals on horizontal and vertical partitioning.
+    - Horizontal, also known as sharding, data is divided among nodes by rows where each node is reponsible for a specific range of that row.
+    - Vertical, done by Column where an ID for particular line items referentially links the separate nodes. Main advantage is that is improves query performance by storing related columns together on the same node.
 
 Partitioning Criteria:
 
