@@ -1,0 +1,32 @@
+Latency vs Throughput
+
+Latency Definition - measure of delay, how long it takes for a single request to be processed. So, low latency means fast response.
+    - Measured in units of time.
+    - important in scenarios where real-time or near-real-time interaction or data transfer is critical.
+
+Throughput Definition - the amount of data transferred over a network or processed by a system in a given amount of time. High throughput indicates a higher data processing capacity.
+    - Measured in units of data per time (Mbps, megabits per second)
+    - critical measure in systems where the volume of data processing is significant, like a video streaming service.
+
+
+TRADE OFFS : Improving throughput may increase latency, and vice versa. Optimizing one can easily impact the other.
+
+
+How to improve latency?
+1. use content delivery networks (CDNs) to serve content from locations geographically closer to the user.
+2. Caching
+3. Vertical processing improvements - basically, hardware upgrades
+4. Faster communication protocols - HTTP/2
+5. Database optimization - indexing, optimized queries, in-memory databases
+6. Load balancing - distribute incoming requests efficiently
+7. Code optimization - improve Big O notation
+8. Reduce the number of API calls or external dependencies
+
+How to improve throughput?
+1. Horizontal scaling - add more servers
+2. Caching
+3. Parallel processing - tasks are divided and processed simultaneously
+4. Batch processing 
+5. Optimize database performance - partitioning, sharding
+6. Asynchronous processing - for tasks that don't need to be completed immediately
+7. Increase network bandwidth - to accommodate higher data transfer rates
