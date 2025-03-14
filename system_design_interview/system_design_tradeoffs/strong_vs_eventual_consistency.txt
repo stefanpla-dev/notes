@@ -1,0 +1,15 @@
+Strong vs Eventual Consistency
+
+Strong consistency (strict consistency) - when new data is written, the write is only confirmed when all nodes (or a majority - think Q word - depending on design) have the new data. No such thing as a "stale" read.
+    - This inherently means that updates take longer. Concurrent writes will wind up being serialized, or even fail. 
+    - A common approach is that all writes go thorugh the primary and are synchronously replicated to secondaries.
+
+    TRADE OFFS: latency and availability sacrificed for the sake of accuracy. Unsurprising, then, that banks typically air on the side of strong consistency. Inventory management, booking systems.
+
+
+Eventual consistency -  if no new updates are made to a piece of data, all copies of that data will eventually become consistent. Possible to read stale data temporarily, but responses to operations are very fast. 
+    - Write is considered successful as soon as it's on at least one node. 
+    - This makes this kind of system fault tolerant and fast
+    - Often used by NoSQL databases.
+
+    TRADE OFFS: the opposite of the above, essentially. Social media airs on the side of eventual consistency - your post may not appear on everyone's timelines at the same time, but eventually everyone will see it. 
