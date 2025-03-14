@@ -1,0 +1,19 @@
+ACID vs BASE Properties in databases
+
+ACID and BASE are two common models for handling database conssitency and reliability.
+
+ACID is about keeping things strictly correct and reliable.
+BASE is about keeping things basically available and scalable (even if data is briefly inconsistent)
+
+ACID
+
+Atomicity - (all or nothing) each transaction is either fully completed or not executed at all.
+Consistency - (valid state) each transaction brings the database from one valid state to another.
+Isolation - (don't interfere) concurrent transactions do not interfere with each other.
+Durability - (never lost) committed data can't be undone even if the sytem fails.
+
+BASE
+
+Basically available - the system will always try to give you some response. Focus is to keep the service running.
+Soft state - state of the system may change or fluctuate over time because updates propogate gradually. Data changes in the background. In the meantime, different parts of the system might have slightly different information.
+Eventually consistent - sort of self explanatory, but this is the crux of a BASE system.
