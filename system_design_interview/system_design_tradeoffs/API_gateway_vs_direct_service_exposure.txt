@@ -1,0 +1,24 @@
+API Gateway vs Direct Service Exposure
+
+
+API GATEWAY (in this scenario)
+
+Gateway defined in the Load Balancer vs. API Gateway notes section.
+
+    - PROS: Simplifies management of cross-cutting functionality
+            Clients need only know the endpoint of the API gateway, not the individual services
+            Provides an additional layer of security by offering centralized authentication and SSL termination.
+
+    - CONS: Single point of failure.
+            Adding an extra network hop can increase response timelines
+
+DIRECT SERVICE EXPOSURE
+
+Each service is directly exposed to clients. Clients interact with each service through each individual service endpoints. Each service manages its own cross-cutting concerns.
+    - PROS: Eliminates a single point of failure
+            Requests do not go through an additional layer which can improve latency.
+    
+    - CONS: Increased complexity for the clients
+            Redundant implementations as cross-cutting concerns for each service may need to be implemented.
+
+
