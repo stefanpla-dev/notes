@@ -1,0 +1,17 @@
+Batch Processing vs Stream Processing
+
+BATCH PROCESSING 
+
+Large, discrete blocks of data processing. Can be at an interval or when a certain quantity of data is reached. High throughput - efficient for processing large volumes of data where immediate action is not necessary.
+    - PROS: Can be more resource efficient as the system can optimize for large volumes of data
+            Often simpler to implement and maintain than stream processing.
+    - CONS: Delay in insight due to processing delays
+            Less flexible in handling changes.
+
+STREAM PROCESSING
+
+Stream processing continuously processes data in real time as it arrives. Ideal for applications requiring instantaneous data processing and decision-making.
+    - PROS: More adaptable to changing data and conditions.
+    - CONS: Generally more complex to implement
+            Resource intensive
+
