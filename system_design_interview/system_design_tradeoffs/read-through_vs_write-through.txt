@@ -1,0 +1,24 @@
+Read-Through vs Write-Through Caching
+
+Relationship between the cache and the primary storage system.
+
+READ-THROUGH 
+
+Data is loaded into the cache on demand, typically when a read request occurs for data that is not already in the cache.
+    - CONS: This first load will always follow a cache miss. Higher latency.
+    - PROS: Application only needs interact with the cache.
+            Frequently accessed data is served quickly.
+            Reduces load on primary storage
+
+Ideal for data that is read frequently but updated infrequently, or scenarios where you can tolerate eventual consistency for reads.
+
+
+WRITE-THROUGH 
+
+Data is written simultaneously to the cache and the primary storage system. This ensures the cache always contains the most recent data.
+    - CONS: Latency on write operations
+            Higher load on primary storage
+    - PROS: Data consistency that read-through may lack
+            No data loss if cache fails/crashes
+
+Ideal for applications for which high integrity matters, especially for write operations, or when the system requires immediate propogation of updates.
