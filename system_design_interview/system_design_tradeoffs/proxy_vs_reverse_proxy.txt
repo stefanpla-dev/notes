@@ -1,0 +1,24 @@
+Proxy vs Reverse Proxy
+
+Both are intermediary entities in a network that manage and redirect traffic, but they differ in terms of operational setup and the direction in which they "face."
+
+
+(FORWARD) PROXY 
+
+For requests from clients (browsers) seeking resources from other servers. Hides the itendity of the CLIENT from the servers they are accessing. Manages outbound requests to the internet or other networks.
+
+As it sits closer to the client, possible additional functionality can be:
+    - Caching
+    - traffic control
+    - logging
+    - request/response transformation
+
+
+REVERSE PROXY
+
+Hides the identity of the SERVER from the clients that are accessing it. Manages inbound requests from outside the server infrastructure.
+
+As it sits closer to the server, possible additional functionality can include:
+    - load balancing
+    - SSL termination
+    - caching
