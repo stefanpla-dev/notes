@@ -1,0 +1,25 @@
+Load Balancer vs API Gateway
+
+Used to manage incoming traffic and requests to web applications. Some overlapping functionality, primary purposes and use cases are distinct.
+
+LOAD BALANCER 
+
+Purpose: distribute network or application traffic across multiple servers. MAximize resource use and throughput, reduce response time.
+
+How it Works: Requests are routed to one of several backend servers based on factors like number of current connections, server response time, server health
+
+
+API GATEWAY 
+
+Purpose: Acts as a reverse proxy to route requests, aimplify the API, and aggregate the results from various ervices.
+
+How it Works: handles request routing, API composition, rate limiting, authentication, authorization.
+
+Usage: Think an online banking app that needs to interact with services like account details, transaction history, and currency exchange rates. API Gateway sits between the app and these services.
+
+
+KEY DIFFERENCES
+
+Load balancers ensure high availability and redundancy of servers. API Gateways are more about providing a central point for managing and routing API calls. Both can route requests, but the API Gateway offers more functionality.
+
+These two can work well together, where the load balancer manages traffic across multiple instances of API Gateways. Can run a load balancer before, after, or before and after an API Gateway, depending on needs.
