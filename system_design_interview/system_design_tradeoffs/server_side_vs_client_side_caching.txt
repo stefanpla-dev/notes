@@ -1,0 +1,30 @@
+Server-Side Caching vs Client-Side Caching
+
+Two strategies to store data temporarily to improve the performance and efficiency of applications. Both reduce load times and bandwidth usage but operate at different points in the process.
+
+SERVER-SIDE CACHING 
+
+    Definition: Server maintains cache to store frequently accessed data. It is fully controlled by the server. Can include database query caching, full HTML page caching, and object caching.
+
+    Ideal for data used by multiple users.
+
+    PROS: 
+        Faster response times
+        Decreased server load
+        Can centrally manage data freshness
+    CONS:
+        Requires additional server resources like memory, disk space
+        Requires effective cache invalidation strategies to ensure data consistency
+
+CLIENT-SIDE CACHING
+
+    Definition: Data is stored on client's device, like a web browser or a mobile app. Can load data without sending a request to the server. Controlled by the client. Includes browser caching of images, scripts, stylesheets, and application data.
+
+    Ideal for user-specific data.
+
+    PROS:
+        Reduced network traffic
+        Allows users to access cached data even when offline.
+    CONS:
+        Storage limited to the client device's storage capacity
+        Can lead to users viewing outdated info if not synced properly with the server
