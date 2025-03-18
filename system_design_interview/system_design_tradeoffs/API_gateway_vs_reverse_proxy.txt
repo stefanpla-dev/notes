@@ -1,0 +1,21 @@
+API Gateway vs Reverse Proxy
+
+Both manage incoming requests, but serve different purposes and cater to different needs.
+
+API GATEWAY (REVIEW)
+
+    Purpose: Management tool that acts as a single point of entry for a defined group of microservices, handling and routing them to the appropriate service. Unified interface to a set of independently deployable services.
+
+    Functionality: Routing, request aggregation, cross-cutting concerns (authentication, authorization, rate limiting, logging)
+
+REVERSE PROZY (REVIEW)
+
+    Purpose: Shield server from client, fetch resources from server on behalf of a client.
+
+    Functionality: Load balancing, security, caching.
+
+KEY DIFFERENCES
+
+    Primary role - API gateway for managing application level traffic, reverse proxy more for security and caching
+
+    Complexity - API gateways tend to be more sophisticated.
