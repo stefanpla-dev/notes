@@ -1,0 +1,39 @@
+Data Compression vs Data Deduplication
+
+Techniques to optimize data Storage
+
+DATA COMPRESSION 
+
+    Definition: Encoding information using fewer bits than the original representation. Removes redundancies and is often used to save storage space or decrease transmission times. Think zip files.
+
+    Scope is a single file or data stream.
+
+    Types:
+        Lossless compression - these are zip files. You can restore data back to its original state. 
+        Lossy compression - permanently eliminate certain information, especially in media files.
+
+    PROS: 
+        Efficient storage
+        Reduces data transmission time over networks
+    CONS:
+        Requires computational resources for compressing and decompressing data.
+        Quality loss in lossy compression can lead to degredation in media files.
+
+DATA Deduplication
+
+    Definition: Eliminate duplicate copies of repeating data. Used in data storage and backup systems to reduce the amount of storage space needed.
+
+    May result in elimination of entirely redundant files or data blocks across a system. Scope is system-wide.
+
+    Relies on references to the original data for restoration.
+
+    Process:
+        System identifies and removes redundant data segments, keeping only one copy of each.
+        Subsequent copies are replaced with pointers to the stored segment.
+
+    PROS:
+        Significantly reduces storage needs, especially for backup systems
+        Makes backups more efficient by reducing quantity that needs to be backed up.
+    CONS:
+        Limited to identical data.
+        Requires processing power to identify duplicates.
