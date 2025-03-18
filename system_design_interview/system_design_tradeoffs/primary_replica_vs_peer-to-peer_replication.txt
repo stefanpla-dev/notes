@@ -1,0 +1,37 @@
+Primary-Replica vs Peer-to-Peer Replication
+
+PRIMARY-REPLICA   
+
+    Definition: One server handles all of the write operations and then the changes are replicated to one or more servers.
+
+    Characteristics: 
+        Unidirectional (all data flows from the primary to the replicas)
+        Read/write split (primary handles all writes, while replicas handle all reads)
+
+        Ideal for applications where read-heavy operations need to be scaled.
+    
+    PROS:
+        Easier to maintain and ensure Consistency
+        Can scale read operations by adding replicas
+    CONS:
+        Single point of failure
+        Changes made to the primary take time to propogate.
+
+PEER-TO-PEER REPLICATION 
+
+    Definition: Each node in a network can act both as a client and a server. Nodes are equally able to initiate or complete replication processes.
+
+    Characteristics:
+        Multi-directional (any node can replicate data to another node)
+        Autonomy (each peer maintains its copy of the data and can independently respond to read and write requests)
+
+        Ideal for distributed networks where decentralization and load distribution are critical, like file sharing or blockchain technologies.
+
+    PROS:
+        Eliminates single point of failure
+        Better load balancing
+    CONS: 
+        More complex to manage and ensure data consistency across nodes
+        Handling data conflicts can be challenging due to simultaneous updates from multiple peers.
+
+
