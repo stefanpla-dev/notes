@@ -1,0 +1,39 @@
+REST vs RPC 
+
+REST (Representational stage transfer) and RPC (Remote Procedure Call) are two architectural approaches used for designing network applications, particularly for web services and APIs.
+
+REST
+
+    Concept: Uses HTTP methods (GET, POST, PUT, DELETE) to access and manipulate data. Treats server data as resources that can be created, read, updated, or deleted (CRUD operations) 
+
+    Stateless: Each request from client to server must contain all necessary info to understand and complete the requeset.
+
+    Data and Resources: emphasis on resources, identified by URLs, and their state transferred over HTTP in a textual representation like JSON or XML
+
+    Often chosen for web services or public APIs.
+
+    PROS:
+        Scalability
+        Can leverage HTTP caching infrastructure
+        Simple to build and manage
+    CONS:
+        Over-fetching or under-fetching of data is totally possible
+        Lacks a strict standard, leading to different interpretations and implementations (?)
+        
+RPC
+
+    Concept: allows one program to execute a procedure (subroutine) in another address space (usually on another computer on a shared network)
+
+    Procedure-oriented: Clients and servers communicate with each other through explicity remote procedure calls. The client invokes a remote method, and the server returns the results of the procedure.
+
+    Data transmission: can use JSON or XML or binary formats
+
+    Often chosen for actions that are tightly coupled to server-side operations, especially when efficiency and speed are critical.
+
+    PROS:
+        Allows for more straightforward mapping of actions to server-side operations
+        Binary RPC can be more efficient in data transfer and faster in performance
+        Procedure definitions create a clear contract between client and server
+    CONS:
+        Less flexible
+        Can maintain state, which might reduce scalability
