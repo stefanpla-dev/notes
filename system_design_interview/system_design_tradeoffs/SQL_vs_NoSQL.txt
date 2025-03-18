@@ -1,0 +1,24 @@
+SQL vs NoSQL
+
+SQL (REVIEW)
+
+    Relational databases. Use SQL (structured query language) for defining and manipulating data.
+
+    Data is stored in tables which follow a schema, and those tables relate to one another.
+
+    Best for applications that require complex, reliable transactions or where data structure won't change frequently
+
+
+NoSQL (REVIEW)
+
+    Non-relational or distributed databases. No fixed schema, which allows the data to change over time. Designed to horizontally scale using distributed clusters of hardware. 
+
+    Can store different types of data without a fixed schema.
+
+    Best for applications that handle large amounts of diverse data or projects where data structure can change over time.
+
+
+KEY DIFFERENCES
+
+    SQL offers strong ACID compliance (Atomicity, Consistency, Isolation, Durability)
+    NoSQL can be faster and less complex for certain types of queries.
