@@ -1,0 +1,26 @@
+CDN Usage vs Direct Server Serving
+
+Two different approaches to delivering content to end-users over the internet.
+
+CDN USAGE 
+
+    Definition: A Content Delivery Network is a network of distributed servers that deliver web content to users based on their geographic location. CDNs cache content in multiple locations closer to end-users to reduce latency.
+
+    PROS:
+        Reduced latency
+        Efficiently handles high traffic/easy to scale
+        Reduces load on origin server
+    CONS:
+        Can incur additional costs
+        Requires configuration and maintenance of CDN settings.
+
+DIRECT SERVER SERVING 
+
+    Definition: All user requests are handled directly by the main server where the site is hosted without intermediary CDN servers.
+
+    PROS:
+        Simple to set up and manage
+        Cost effective for small scale
+    CONS:
+        Difficult to scale
+        Users far from server location may experience slower access.
