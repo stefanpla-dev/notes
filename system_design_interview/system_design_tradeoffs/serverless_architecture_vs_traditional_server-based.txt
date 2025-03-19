@@ -1,0 +1,30 @@
+Serverless Architecture vs Traditional Server-Based Architecture
+
+Two different approaches to deploying and managing applications/services, especially in the world of cloud computing.
+
+SERVERLESS ARCHITECTURE 
+
+    Definition: Cloud provider dynamically manages the allocation and provisioning of servers. Developers write and deploy code without worrying about the unerlying infrastructure.
+
+    Automatically scales up or down based on demand and costs are based on actual usage.
+
+    Ideal for applications with variable or unpredictable workloads.
+
+    PROS:
+        Eliminates need for managing servers
+        Pay only for what you use, which can reduce costs
+        Automatically scales with application load.
+    CONS:
+        Less control over the environment and underlying infrastructure.
+        Can experience latency issues
+
+TRADITIONAL SERVER-BASED ARCHITECTURE 
+
+    Definition: Applications are deployed on servers which must be provisioned, maintained, and scaled by a developer or operations team. Servers have fixed resources, run continuously, and incur ongoing costs regardless of usage.
+
+    PROS:
+        Complete control over the server environment and infrastructure.
+        More flexibility in configuring and optimizing the server
+    CONS:
+        Higher costs
+        Additional operational complexity.
