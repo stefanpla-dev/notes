@@ -1,0 +1,25 @@
+Toekn Bucket vs Leaky Bucket
+
+Two algorithms used for network traffic shaping and rate limiting.
+
+TOKEN BUCKET ALGORITHM 
+
+    Mechanism: Based on tokens added to a bucket at a fixed rate. Each token represents permission to send a certain amount of data. When data needs to be sent, it can only be transmitted if there is a token available, which is then removed from the bucket. Bucket can store tokens which allows for temporary bursts of data at moments of high traffic.
+
+    Think video streaming service. Service allows data burts for fast initial buffering. Once tokens are used up, the streaming rate is limited to the rate of replenishment.
+
+    PROS:
+        Flexibility in handling moments of high traffic
+    CONS:
+        Requires monitoring the number of available tokens.
+
+LEAKY BUCKET ALGORITHM
+
+    Mechanism: Packets are added to a queue and then released at a constant rate. If bucket is full, incoming packets are discarded or queued for later transmission.
+
+    PROS:
+        Simple to implement
+        Ensures uniform output rate
+    CONS:
+        Does not allow for much flexibility in handling traffic bursts
+        Can lead to packet loss
