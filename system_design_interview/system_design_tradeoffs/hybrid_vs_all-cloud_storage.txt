@@ -1,0 +1,26 @@
+Hybrid Cloud Storage vs. All-Cloud Storage
+
+Two cloud computing models that businesses use for storing data, each with its own architecture and use cases.
+
+HYBRID CLOUD STORAGE 
+
+    Definition: Combines private and public cloud storage. Data and applications can move between the two. Usually, more sensitive data is stored on a private cloud or on premises, usually in cases where compliance is critical.
+
+    PROS: 
+        Enhanced security 
+        Easy to scale resources up or down via the public cloud component
+    CONS:
+        Management of two different environments.
+        Can be more expensive than using only public cloud services
+
+ALL-CLOUD STORAGE 
+
+    Definition: Pretty self-explanatory, given the above. Cloud services utilized to make this possible are typically AWS, Azure, or Google Cloud Platform.
+
+    PROS:
+        Low maintenance
+        Easy to scale resources to meet demand
+    CONS:
+        Potential security concerns
+        Fully reliant on internet connectivity
+        Fully reliant on a third party 
