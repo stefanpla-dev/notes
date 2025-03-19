@@ -1,0 +1,64 @@
+Polling vs. Long-Polling vs. WebSockets vs. Webhooks
+
+Each of these help achieve real-time communication between clients and servers. Think of instant messaging apps, apps that make use of some notification functionality, that sort of thing. 
+
+POLLING 
+
+    Definition: Client periodically sends an HTTP request to server for new data. Server responds with either new data or indication that nothing is new. Cycle repeats at interval determined by client. 
+
+    PROS: 
+        Easy to implement HTTP requests.
+        Works on all browsers and servers.
+        Client has control over frequency of requests.
+    CONS:
+        If data changes infrequently, this may result in many unnecessary requests and waste bandwidth.
+        True real-time updates are hard to achieve
+        Frequent polling by many clients can put load on the server which may not scale well.
+
+    Good if application doesn't need instant updates. Keep the interval as low as necessary to balance timeliness vs load
+
+
+LONG-POLLING 
+
+    Definition: Similar to polling but specifically aimed at reducing unnecessary network chatter. Client sends requests, but server doesn't respond immediately unless it has new data. Server holds connection open until there's new data or a timeout is reached. Connection closes after timeout or new data.
+
+    PROS: 
+        Near real-time updates of new data.
+        Reduction in number of pointless network calls
+        Standard HTTP requests.
+    CONS:
+        Holding connections open for many clients can use a lot of server threads or memory
+        More complex implementation than basic polling
+        Server can only respond once per request. Can become similar to more simple polling if there is a lot of data to share.
+
+    Use when you need better real-time behavior than basic polling but you are constrained to HTTP. 
+
+WEBSOCKETS 
+
+    Definition: A persistent, bidirectional communication channel between the client and server over a single TCP connection. Client and server can send data without waiting for requests.Starts with a standard HTTP requests known as a "handshake." Connection remains alive until either client or server closes it, or a network issue occurs.
+
+    PROS:
+        True real-time bidirectional communication.
+        Low latency and efficient uses of resources.
+        Fewer connections can be lighter on network overhead and server processing once established.
+    CONS:
+        Complex to implement, scale, debug/generally manage
+        Some older proxies, firewalls, browsers etc can't handle websocket traffic. Often require a backup plan just in case for this reason.
+
+    Use when you need instantaneous, two-way communication or if your app is interactive or pushes frequent updates to users.
+
+WEBHOOKS 
+
+    Definition: Server-to-server communication in an event driven way. Essentially an HTTP callback: one system defines a URL (endpoint) that another system will call when a certain event occurs. Server calls out to another server to deliver data when a specific event happens. Push model.
+
+    PROS:
+        Webhooks provide immediate delivery of data when events happens
+        Greatly reduces unnecessary traffic and lightens load on the server
+        As long as a service provides webhooks, any external system can provide a URL to get notified of events.
+    CONS: 
+        One-way communication
+        Server must be up and reachable at the time of the event
+        Additional security requirement: need to ensure the request came from the expected sender
+        Data usually delivered to servers, not explicitly to clients. Need something else for the "last mile."
+
+    Best for cross-application or server-to-server notifications. Perfect for asynchronous event notification.
