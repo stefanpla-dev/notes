@@ -1,0 +1,27 @@
+Stateful vs Stateless Architecture
+
+Two approaches to managing user information and data processing in software applications, particularly in web services and APIs.
+
+STATEFUL ARCHITECTURE
+
+    Definition: Server retains information (or state) about the client's session. This state is used to remember previous interactions and resopnd in turn to future actions.
+
+    As in, a banking application maintains your session data like authentication which influences how the server responds (displaying account balance, transaction history)
+
+    PROS:   
+        Enables more personalized user experience
+        Convenient for transactions that require multiple steps
+    CONS:
+        Resource intensive 
+        Scaling a stateful application can be complex due to session data dependencies.
+
+STATELESS ARCHITECTURE
+
+    Definition: Each request from the client to server must contain all information needed to understand and complete the request. RESTful APIs are a classic example of stateless architecture for this reason.
+
+    PROS:
+        Simple to implement and scale
+        System is more predictable and easier to debug
+    CONS:
+        Can lead to data redundancy
+        Clients may need to handle more complexities in preparing requests
