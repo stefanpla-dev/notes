@@ -1,0 +1,28 @@
+Read Heavy vs Write Heavy System
+
+
+DESIGNING FOR READ HEAVY SYSTEMS
+
+Common scenarios like CDNs, reporting systems, or read-intensive APIs.
+
+    Key Strategies:
+        - Caching: to reduce database read operations. Can be done at the application or database level or by using a dedicated caching service.
+        - Database Replication: Read operations distributed across replicas of the primary database, while write operations are directed to the primary.
+        -CDN: Cache static content geographically closer to users, reducing latency and offloading traffic from the origin server.
+        -Load Balancing: Employ load balancers to distribute incoming read requests evenly across multiple servers or replicas
+        -Optimized Data Retrieval: use data indexing to speed up searches and retrievals
+        -Data Partitioning: Partition to distribute load across different servers or databases (sharding or horizontal partitioning)
+        -Asynch Processing: for operations that don't need to be done in real time.
+
+DESIGNING FOR WRITE HEAVY SYSTEMS
+
+Common scenarios like logging systems, real-time data collection, or transactional databases.
+
+    Key Strategies:
+        -Database Selection and Design: choose one optimized for high write throughput. Think NoSQL
+        -Write Batching and Buffering: batch operations together ro reduce the number of write requests
+        -Asynch Processing: allow applications to continue processing without waiting for write operation to complete. Handle asynch.
+        -CQRS (Command Query Responsibility Segregation): Separate the write command and ready query operations into different models.
+        -Data Partitioning: can use sharding or partitioning to distribute write operations across different database instances or servers.
+        -Use of Write-Ahead Logging (WAL): First write changes to a log before applying them to a database.
+        -Event Sourcing: persist changes as a sequence of immutable events rather than modifying the database state directly.
