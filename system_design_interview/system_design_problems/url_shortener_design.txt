@@ -1,0 +1,36 @@
+How to Design a URL Shortener?
+
+Definition: TinyURL. A service that takes a long URL and shortens it so save space, enhance easthetics, improve readability, etc. Assigns a unique hash that allows the shorter URL to redirect to the address at the longer URL.
+
+Functional Requirements:
+    -shorten URL
+    -redirect to original URL
+    -URL expiration (set expiration date after which the link is no longer valid)
+    -user account management
+    -customer short URLs
+    -track usage statistics by URL
+
+Non-Functional Requirements:
+    -high availability
+    -security (prevent malicious or inappropriate content from being hidden by shortening)
+    -scalability
+    -performance (minimal latency between clicking shortened URL and reaching intended destination)
+ 
+
+Back-of-the-envelope estimations:
+
+    Traffic estimates - approximately 200 URLs /s, or about 500 million URLs per month
+                    - 20,000 URL redirections/s (based on a 100:1 read/write ratio)
+    Storage estimates - 30 billion URLs over 5 years (500 million * 12)
+                    - estimated storage required: 15 TB (assuming each URL shortening request is around 500 bytes)
+
+System APIs:
+    - create short URL API 
+    - redirect API 
+    - analytics API 
+    - URL management API 
+    - Delete short URL API
+
+
+
+Steps after this per the video looked like diagramming out the various functional requirement workflows/where information moves once certain requests are made. 
