@@ -1,0 +1,67 @@
+Designing Instagram
+
+
+Functional Requirements:
+    - Users should be able to upload and view photos and videos
+    - Users can follow other Users
+    - The system should generate and display a user's News Feed consisting of top posts from all the people the user follows
+Non-functional Requirements:
+    - Highly available: consistency can take a hit in favor of availability 
+    - Reliable: Data loss is not acceptable. 
+    - Scalability: system is very large and will continue to gain users and need to scale
+
+
+At a high level, we need to support two scenarios - one to upload photos and another to view/search through photos. 
+
+Database Schema:
+    (Defining the DB Schema in the early stages of the interview would help to understand the data flow among various components and later would guide any data partitioning)
+
+    Photo:
+        -UserID
+        -PhotoPath
+        -PhotoLatitude
+        -PhotoLongitude
+        -UserLatitude
+        -UserLongitude
+        -CreationDate
+    UserID:
+        -Name
+        -Email
+        -DOB
+        -CreationDate
+        -LastLogin
+    UserFollow:
+        -FollowerID
+        -FolloweeID
+
+    A straightforward approach would be to use a relational database since we require joins. However, these are hard to scale.
+
+    We could use NoSQL - all the metadata related to photos can go to a table where the "key" would be the PhotoID and the "value" would be an object comtaining PhotoLocation, UserLocation,CreationTimestamp
+
+Component Design
+    -This will be a read heavy system.
+    -But, since uploading is slow, uploading users can theoretically consume all available connections which will make writes much more difficult. 
+    -So, split reads and writes onto separate services with dedicated servers.
+
+Reliability and Redundancy
+    -Store multiple copies of each file since losing them is not an option.
+    -Creating redundancy removes single points of failure in a system.
+
+
+Data Sharding
+    -Partitioning based on UserID 
+        -Keep all photos from a user on the same shard.
+        
+        -However, some people post more than others, leading to a non-uniform distribution of storage.
+        -What if we cannot store all pictures of a user on one shard?
+        -Storing all photos of a user on one shard can cause issues like high unavailability if that shard is down
+        
+        -Partitioning based on Photo UserID would solve the above problems. Generate photoIDs with a dedicated database instance. This would be a single point of failure, though. Maybe have two and use a load balancer to round robin?
+
+News Feed Generation
+    -Pre-generate news feeds
+        -Have dedicated servers that are continuously generating users' News Feeds and storing them in a UserNewsFeed table. We query this table and return results to the user.
+    -How to send News Feed content to users?
+        -Pull: clients can pull content from servers at intervals or manually. May not always be data there to pull, However
+        -Push: Servers can push new data to users as soon as it is available. Server may have to push a lot of updates for people who follow a lot of others or a celebrity who has millions of followers.
+        -Hybrid: separate users who have a high number of followers to a pull-based model and only push data to those or have comparatively fewer followers.
