@@ -1,6 +1,6 @@
 CDN Usage vs Direct Server Serving
 
-Two different approaches to delivering content to end-users over the internet.
+Two different approaches to delivering content to end-users over the internet. CDN Usage is more likely to be utilized by a huge shop like Amazon. Direct Server Serving is more likely to be used by a local brick and mortar store for their website.
 
 CDN USAGE 
 
