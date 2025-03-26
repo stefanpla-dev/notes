@@ -1,24 +1,28 @@
 Caching 
 
-In short, better utilize the resources you have. 
+Definition: 
+    In short, better utilize the resources you have. 
 
-"High speed storage layer that sits between the application and the original source of data"
+    "High speed storage layer that sits between the application and the original source of data"
 
-Think of clearing cache and cookies recommendation from support days - when data is requested, first cache is checked. If not found, data is retrieved from original source. If found, no need to request from original source.
+    Think of clearing cache and cookies recommendation from support days - when data is requested, first cache is checked. If not found, data is retrieved from original source. If found, no need to request from original source.
 
-Cache hit - when data is found in the cache
-Cache miss - take a guess.
-Cache eviction - removing data from the cache 
-Cache staleness - when data in the cache is outdated compared to original source
+Important vocabulary:
 
-In memory caching - commonly used for caching API responses, session data, web page fragments. stuff that can fit into available memory
-Disk caching - data too large to fit in memory. Or, data that must persist between application restarts. Database queries. Slower than main memory, but still faster than retrieving from a remote source.
-Database caching - self explanatory, but used to reduce the need to access external storage accessed by multiple users.
-Client-side caching - caching on a web browser or mobile device. Can include images, CSS, JS files. Reduce requests to server.
-Server-side caching - also self explanatory. Same as above, but occurs on the server.
-CDN caching - caching on a distributed network of servers, reducing latency of accessing data from remote locations
-DNS caching - Domain Name System. when a user requests to access a website, their computer sends a DNS query to a DNS server to resolve the domain name to an IP address. When requested again, the DNS server can check its cache and immedaitely respond with the IP address. Improves response time.
-    - Authoritative name servers hold the actual DNS records for a domain, including its IP address and other information. They provide the final answer to DNS queries, enabling users to access the desired website or resource.
+    Cache hit - when data is found in the cache
+    Cache miss - take a guess.
+    Cache eviction - removing data from the cache 
+    Cache staleness - when data in the cache is outdated compared to original source
+
+Types: 
+    - In memory caching - commonly used for caching API responses, session data, web   page fragments. stuff that can fit into available memory
+    - Disk caching - data too large to fit in memory. Or, data that must persist between application restarts. Database queries. Slower than main memory, but still faster than retrieving from a remote source.
+    - Database caching - self explanatory, but used to reduce the need to access external storage accessed by multiple users.
+    - Client-side caching - caching on a web browser or mobile device. Can include images, CSS, JS files. Reduce requests to server.
+    - Server-side caching - also self explanatory. Same as above, but occurs on the server.
+    - CDN caching - caching on a distributed network of servers, reducing latency of accessing data from remote locations
+    - DNS caching - Domain Name System. when a user requests to access a website, their computer sends a DNS query to a DNS server to resolve the domain name to an IP address. When requested again, the DNS server can check its cache and immedaitely respond with the IP address. Improves response time.
+        - Authoritative name servers hold the actual DNS records for a domain, including its IP address and other information. They provide the final answer to DNS queries, enabling users to access the desired website or resource.
 
 
 Caching significantly improves performance, but data can't be stale. Removing old data is called "cache invalidation." Need to invalidate cache when data changes (like, the price on a website, for example). 

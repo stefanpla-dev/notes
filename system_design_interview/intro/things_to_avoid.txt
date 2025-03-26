@@ -1,11 +1,11 @@
 What NOT To Do:
 
--Ignore the requirements or oversimplify!
--Lose sight of the big picture. Don't zoom in on small details too soon, if at all
--Stick rigidly to one idea. Be flexible. The interviewer may give you hints!
--Overlook trade offs. Be prepared to justify one approach compared to another.
--Overlook non-functional requirements
--under-communication
--over-confidence
--monologuing
--not acknowledging what you don't know
+    -Ignore the requirements or oversimplify!
+    -Lose sight of the big picture. Don't zoom in on small details too soon, if at all
+    -Stick rigidly to one idea. Be flexible. The interviewer may give you hints!
+    -Overlook trade offs. Be prepared to justify one approach compared to another.
+    -Overlook non-functional requirements
+    -under-communication
+    -over-confidence
+    -monologuing
+    -not acknowledging what you don't know

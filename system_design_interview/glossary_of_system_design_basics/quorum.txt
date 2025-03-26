@@ -2,7 +2,8 @@ Quorum
 
 Once a system decides to maintain multiple copies of data, how do they ensure the copies are consistent and that all clients see the same view of the data?
 
-A quorum is the minimum number of servesr on which a distributed operation needs to be performed successfully before declaring the operation's overall success. Usually a simple majority where it is recommended to always have an odd number of total nodes in a cluster.
+Definition: 
+    A quorum is the minimum number of servers on which a distributed operation needs to be performed successfully before declaring the operation's overall success. Usually a simple majority where it is recommended to always have an odd number of total nodes in a cluster.
 
 
 Quorum is achieved when nodes follow the protocol R+W > N, where
@@ -13,11 +14,11 @@ Best throughput/availability achieved when 1 < r < w < n, because reads are more
 
 
 Advantages to Quorum:
-Fault tolerance: allows system to tolerate a certain number of failures
-Consistency: Helps maintain data consistency across nodes
-Availability: increases availability of the system by allowing operations to proceed as long as quorum is met 
+    Fault tolerance: allows system to tolerate a certain number of failures
+    Consistency: Helps maintain data consistency across nodes
+    Availability: increases availability of the system by allowing operations to proceed as long as quorum is met 
 
 Challenges to Quorum:
-Network Partitions: in cases of network failures, forming a quorum might be challenging
-Performance Overhead: in large clusters can introduce latency in decision-making processes
-Complexity: frequent node or network changes makes this inherently more challenging
+    Network Partitions: in cases of network failures, forming a quorum might be challenging
+    Performance Overhead: in large clusters can introduce latency in decision-making processes
+    Complexity: frequent node or network changes makes this inherently more challenging

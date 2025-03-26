@@ -7,4 +7,4 @@ Indexes can be created using one or more columns in a database table.
 
 Example: A Library Catalog - Usually, two such catalogs: one sorted by book title, the other by author. So, you can search for a specific book or a specific person.
 
-Indexing can decrease write performance for this reason. Write data AND update index ever time. All insert, update, and delete operations are affected. So, only add indexes when necessary, since the point is to increase retrieval performance.
+Indexing can decrease write performance for this reason. Write data AND update index every time - increased number of operations. All insert, update, and delete operations are affected. So, only add indexes when necessary, since the point is to increase retrieval performance.

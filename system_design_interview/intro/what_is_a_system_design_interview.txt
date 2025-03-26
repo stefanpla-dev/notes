@@ -1,20 +1,20 @@
 What is IS:
 
--part of hiring process for software engineers, system architects, devops engineers
--open ended by nature. a typical technical interview may have a specific solution to get to. this isn't like that.
--goal is to evaluate how you think through large-scale problems and make engineering decisions.
+    -part of hiring process for software engineers, system architects, devops engineers
+    -open ended by nature. a typical technical interview may have a specific solution to get to. this isn't like that.
+    -goal is to evaluate how you think through large-scale problems and make engineering decisions.
 
 Why does it exist?
 
--forces you to break an open ended problem down and work towards a solution.
--though not a coding challenge, it still evaluates your technical knowledge of things like system architecture components
-    -APIs, caching, load balancing (lol) 
--how do you account for things like scalability, reliability, maintainability
--trade-off analysis : be ready to justify WHY you make the decisions that you do. 
--demonstrates communication ability. they are inherently collaborative
+    -forces you to break an open ended problem down and work towards a solution.
+    -though not a coding challenge, it still evaluates your technical knowledge of things like system architecture components
+        -APIs, caching, load balancing (lol) 
+    -how do you account for things like scalability, reliability, maintainability
+    -trade-off analysis : be ready to justify WHY you make the decisions that you do. 
+    -demonstrates communication ability. they are inherently collaborative
 
 What it is not
 
--getting a perfect answer. rarely is there one "correct" answer.
--a test of memorization.
+    -getting a perfect answer. rarely is there one "correct" answer.
+    -a test of memorization.
 

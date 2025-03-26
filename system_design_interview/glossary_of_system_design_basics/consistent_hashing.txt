@@ -1,24 +1,18 @@
 Consistent Hashing
 
+Definition: 
+    Consistent hashing maps data to physical nodes and ensures only a small set of keys move when servers are added or removed.
 
 Data partitioning - distributing data across a set of servers. Improves scalability and performance.
     But..
         How do we know on which node a particular piece of data will be stored?
-        When we add ore remove nodes, how do we know what data will be moved from existing nodes to new nodes? How can we minimize movements here?
+        When we add or remove nodes, how do we know what data will be moved from existing nodes to new nodes? How can we minimize movements here?
 
 Data replication - making copies of data and storing on different servers. Improves availability and durability 
-
-
-Consistent hashing maps data to physical nodes and ensures only a small set of keys move when servers are added or removed.
-    Each node in the ring is assigned a range of data.
-
 
 Virtual nodes assist when a physical nodes "dies" or needs to be decommissioned. 
     In short, a physical node's range is divided into small ranges and each physical node is assigned several of these smaller ranges. See vnode screenshot in this directory for a visual.
 
     This spreads the laod more evenly across the physical nodes. Furthermore, when a node needs to be rebuilt, many nodes participate in the rebuild process so it's not all on one.
-
-
-
 
 This one was admittedly really convoluted to read. 

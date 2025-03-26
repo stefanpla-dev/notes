@@ -1,27 +1,27 @@
 Functional Requirements
 
--these define what a system is supposed to do.
--examples:
-    -a user auth system must validate user credentials and provide access levels
-    -e-commerce website should allow users to browse, add to cart, process payments, purchase.
-    -report system must collect data, process it, visualize that data
--these form the backbone of system design
+    -these define what a system is supposed to do.
+    -examples:
+        -a user auth system must validate user credentials and provide access levels
+        -e-commerce website should allow users to browse, add to cart, process payments, purchase.
+        -report system must collect data, process it, visualize that data
+    -these form the backbone of system design
 
 Non-Functional Requirements
 
--how the system performs a task. functional are the tasks themselves, non functional is how.
--examples:
-    -scalability: handle growth in users or data
-    -performance: process transactions withing a specified time
-    -availability: up and running a defined percentage of the time. 
-    -security: protect sensitive data and resist unauthorized access
--demonstrates your understanding of implications of your design as well as how your system can meet real-world contraints and expectations
+    -how the system performs a task. functional are the tasks themselves, non functional is how.
+    -examples:
+        -scalability: handle growth in users or data
+        -performance: process transactions withing a specified time
+        -availability: up and running a defined percentage of the time. 
+        -security: protect sensitive data and resist unauthorized access
+    -demonstrates your understanding of implications of your design as well as how your system can meet real-world contraints and expectations
 
 
 Integrating Both is Key. Recommended Step by Step Process:
 
--Clarify requirements. sometimes these are vague on purpose
--prioritize those requirements. sometimes not all are critical
--discuss trade-offs
--discuss real-world examples, if possible
--achieve balance
+    -Clarify requirements. sometimes these are vague on purpose
+    -prioritize those requirements. sometimes not all are critical
+    -discuss trade-offs
+    -discuss real-world examples, if possible
+    -achieve balance

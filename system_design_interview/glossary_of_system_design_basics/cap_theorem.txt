@@ -1,5 +1,8 @@
 CAP Theorem
 
+Definition: 
+    The theorem can be easily stated as: in the presnece of a network partition, a distributed system must choose either consistency or availability.
+
 States that it is impossible for a distributed system to accomplish all of the following:
 
     Consistency: All nodes see the same data at the same time.
@@ -11,5 +14,3 @@ States that it is impossible for a distributed system to accomplish all of the f
 
 CA, CP, and AP are the options, given the theorem. However, CA is not really a coherent system, as a system that isn't partition tolerant will be forced to give up either consistency or availability in the case of a network partition
 
-
-The theorem can be easily stated as: in the presnece of a network partition, a distributed system must choose either consistency or availability.

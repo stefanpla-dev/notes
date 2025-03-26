@@ -1,18 +1,19 @@
-Key Characteristics of Distributed Systems
+Key Characteristics of Distributed Systems (Non-Functional Requirements)
 
 Scalability 
 
--capability of a system, process or network to grow and manage increased demand. if it can evolve to do so, it can scale
--horizontal vs. vertical:
-    -horizontal means adding more of the thing in question to your pool of resources
-    -vertical means increasing the power of the resources you already have
+    -capability of a system, process or network to grow and manage increased demand. if it can evolve to do so, it can scale
+    -horizontal vs. vertical:
+        -horizontal means adding more of the thing in question to your pool of resources
+        -vertical means increasing the power of the resources you already have
 
 
 Reliability 
 
--ability of a system to continue operating correctly in the presence of faults, errors, failures
--a distributed system is reliable if it keeps delivering its services even when one or several of its software or hardware components fail
--exmaple course has is of Amazon - if a server containing your cart fails, it is immediately replaced with another that has an identical copy of your cart due to redundancy of components and data. obviously, this comes at a cost.
+    -ability of a system to continue operating correctly in the presence of faults, errors, failures
+    -a distributed system is reliable if it keeps delivering its services even when one or several of its software or hardware components fail
+    -exmaple course has is of Amazon - if a server containing your cart fails, it is immediately replaced with another that has an identical copy of your cart due to redundancy of components and data. obviously, this comes at a cost.
+    - availability over time
 
 
 Reliability vs. Fault Tolerance

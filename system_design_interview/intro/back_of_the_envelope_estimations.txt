@@ -5,51 +5,51 @@ What Are They?
 
 Why is it important to be able to make quick estimations?
 
--to indicate system scalability
--to validate proposed solutions
--identify bottlenecks
--demonstrate a thought process
--gives you another opportunity to communicate effectively and make decisions
+    -to indicate system scalability
+    -to validate proposed solutions
+    -identify bottlenecks
+    -demonstrate a thought process
+    -gives you another opportunity to communicate effectively and make decisions
 
 
 Estimation Techniques
 
--Rule of Thumb
-    -for example, an estimation that a user will generate 1MB of data per day on a social media platform to serve as a starting point for capacity planning
--Approximation
-    -simplifying calculations by rounding numbers or using values that are easier to compute
--Breakdown and Aggregation
-    -break down problem into smaller components, estimate each separately, put back together
--Sanity Checks
-    -for example, comparing the estimated storage requirements for a messaging service to the actual storage used by similar existing services can help validate the estimate
+    -Rule of Thumb
+        -for example, an estimation that a user will generate 1MB of data per day on a social media platform to serve as a starting point for capacity planning
+    -Approximation
+        -simplifying calculations by rounding numbers or using values that are easier to compute
+    -Breakdown and Aggregation
+        -break down problem into smaller components, estimate each separately, put back together
+    -Sanity Checks
+        -for example, comparing the estimated storage requirements for a messaging service to the actual storage used by similar existing services can help validate the estimate
 
 
 Types of Estimations in System Design Interviews
 
--Load estimation
-    -predict the expected number of requests per second, data volume, or user traffic
--Storage estimation
-    -estimate the amount of storage required to handle the data generated
--Bandwidth estimation
-    -determine what is needed to support the expected traffic and data transfer
--Latency estimation
-    -predcit the response time of the system based on its architecture and components
--Resource estimation
-    -estimate the number of servers, CPUs, or memory required to handle the load and maintain performance
+    -Load estimation
+        -predict the expected number of requests per second, data volume, or user traffic
+    -Storage estimation
+        -estimate the amount of storage required to handle the data generated
+    -Bandwidth estimation
+        -determine what is needed to support the expected traffic and data transfer
+    -Latency estimation
+        -predcit the response time of the system based on its architecture and components
+    -Resource estimation
+        -estimate the number of servers, CPUs, or memory required to handle the load and maintain performance
 
 
 Practical examples
 
--a social media platform with 100 million daily active users (DAUs)
-    -average of 10 posts per day - 100 million * 10 = 1 billion posts
-    -1 billion posts / 86,400 seconds in a day = 11,574 requests/second
--photo sharing app with 500 million users
-    -2 photos per user per day at 2MB each 
-    -500 million * 2 photos * 2MB per photo = 2,000,000,000 MB/day
--web application with 10,000 requests per second
-    -each requests requires 10ms of CPU time
-    -10,000 requests * 10ms/request = 100,000 ms/second
-    -if each CPU core can handle 1,000 ms of processing/second, you need 100 cores.
--WhatsApp (or something like it)
-    -how to break it down?
-    -number of users, messages per user per day, message size, storage requirements (store messages for a specified retention period), bandwidth requiremnts (message traffic between users, considering the number of users, messages per user, message size)
+    -a social media platform with 100 million daily active users (DAUs)
+        -average of 10 posts per day - 100 million * 10 = 1 billion posts
+        -1 billion posts / 86,400 seconds in a day = 11,574 requests/second
+    -photo sharing app with 500 million users
+        -2 photos per user per day at 2MB each 
+        -500 million * 2 photos * 2MB per photo = 2,000,000,000 MB/day
+    -web application with 10,000 requests per second
+        -each requests requires 10ms of CPU time
+        -10,000 requests * 10ms/request = 100,000 ms/second
+        -if each CPU core can handle 1,000 ms of processing/second, you need 100 cores.
+    -WhatsApp (or something like it)
+        -how to break it down?
+        -number of users, messages per user per day, message size, storage requirements (store messages for a specified retention period), bandwidth requiremnts (message traffic between users, considering the number of users, messages per user, message size)
